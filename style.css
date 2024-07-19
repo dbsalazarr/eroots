@@ -1,0 +1,74 @@
+/*
+Theme Name: Eroots
+Theme URI: https://www.google.com
+Author: Bremdows
+Author URI: https://www.twitter.com/bremdows_dev
+Description: Plantilla para describir un tema dedicado al productos de root o raices cuadradas
+Tags: roots, green, plants, life, beautiful
+Version: 1.1
+License: GNU General Public License v2 or later
+Text Domain: eroots
+*/
+:root{
+    --colorPrimario: #;
+    --colorSecundario: #;
+    --colorMenu: #;
+    --negro: #000;
+    --blanco: #fff;
+
+    /*
+        * FUENTES
+    */
+    --fuentePrincipal: "", Arial, Helvetica, sans-serif;
+    --fuenteSecundaria: "", Arial, Helvetica, sans-serif;
+    --sm: 1.6rem;
+    --md: 1.8rem;
+    --lg: 2rem;
+}
+/*
+    * ESTILOS GENERALES
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px is equal a 1rem*/
+}
+body{
+    font: normal normal 1.6rem var(--fuentePrincipal);
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: blocK;
+}
+p{
+    margin-bottom: 2rem;
+}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+
+/*
+    * UTILITARIOS
+*/
+
+

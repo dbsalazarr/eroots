@@ -11,13 +11,30 @@
         wp_enqueue_style('normalize');
         wp_enqueue_style('montserrat');
         wp_enqueue_style('opensans');
+
         wp_enqueue_style('erootstyle');
     }
     add_action('wp_enqueue_scripts', 'assets_eroots');
 
-    function _eroots(){
-        // 
+    function setup_eroots(){
+        // Agregar una imagen a cada entrada
+        add_theme_support('post-thumbnails');
+        
+        // Agregar los titulos personalizados en la etiqueta title
+        add_theme_support('title-tag');
+
+        // Activar la configuración de logos en el theme
+        $image = array(
+            'height' => 64,
+            'width' => 106
+        );
+        add_theme_support('custom-logo', $image);
+
+        // Registrando las dimensiones de imagen a recortar por wordpress
+        # El registro queda pendiente
+        // add_image_size();
     }
+    add_action('after_setup_theme', 'setup_eroots');
 
     function eroots_menus(){
         register_nav_menus(array(

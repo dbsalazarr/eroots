@@ -19,8 +19,8 @@ Text Domain: eroots
     /*
         * FUENTES
     */
-    --fuentePrincipal: "", Arial, Helvetica, sans-serif;
-    --fuenteSecundaria: "", Arial, Helvetica, sans-serif;
+    --fuentePrincipal: "Open Sans", Arial, Helvetica, sans-serif;
+    --fuenteSecundaria: "Montserrat", Arial, Helvetica, sans-serif;
     --sm: 1.6rem;
     --md: 1.8rem;
     --lg: 2rem;
@@ -60,7 +60,7 @@ img{
 p{
     margin-bottom: 2rem;
 }
-h1{}
+h1{ font-family: var(--fuenteSecundaria); font-weight: 900;}
 h2{}
 h3{}
 h4{}
